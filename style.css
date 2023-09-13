@@ -35,18 +35,17 @@ a{
     color: #fff;
     font-size: 1.5rem;
     display: block;
-    margin: 0 0 10px;
+    margin-bottom: 2px;
     padding: 10px 0 10px 10px;
 }
 
-a span{
-    margin-left: 20px;
+.selector a span, .menu span{
     font-family: 'Roboto', sans-serif;
     height: 100%;
-    font-size: 16px;
+    font-size: 15px;
 }
 
-.navbar a:hover{
+.selector a:hover, .menu:hover{
     background-color: #222222;
     border-radius: 8px;
     transition: .1s ease;
@@ -55,20 +54,28 @@ a span{
 }
 
 .selector img{
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     border-radius: 20px;
 }
 
+
 .selector{
     padding: 0 0 40px;
+}
+
+.selector svg, .menu svg{
+    width: 28px;
+    height: 28px;
+    fill: #fff;
 }
 
 .modal{
     position: fixed;
     display: flex;
     width: 250px;
-    margin: 230px 0 0 10px;
+    height: auto;
+    margin: 200px 0 0 10px;
     padding: 8px;
     pointer-events: none;
     opacity: 0;
@@ -77,11 +84,11 @@ a span{
 }
 
 .btn-menu{
-    padding: 16px;
+    padding: 13px;
     width: 230px;
 }
 
-svg{
+.btn-menu svg{
     width: 20px;
     height: 20px;
     fill: #b3b3b3;
