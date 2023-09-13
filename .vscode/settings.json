@@ -1,0 +1,7 @@
+{
+    "editor.cursorBlinking": "phase",
+    "editor.linkedEditing": true,
+    "editor.guides.bracketPairs": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorStyle": "line"
+}
