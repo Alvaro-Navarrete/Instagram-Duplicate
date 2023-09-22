@@ -3,5 +3,6 @@
     "editor.linkedEditing": true,
     "editor.guides.bracketPairs": true,
     "editor.cursorSmoothCaretAnimation": "on",
-    "editor.cursorStyle": "line"
+    "editor.cursorStyle": "line",
+    "liveServer.settings.port": 5501
 }
