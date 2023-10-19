@@ -19,44 +19,53 @@ a{
 }
 
 .logo{
-    margin-bottom: 20px;
+    width: 100%;
+    padding-left: 10px;
 }
 
 .navbar{
-    padding: 20px 10px 0 15px;
+    padding: 10px 10px 0 15px;
     width: 250px;
+    height: 100vh;
+    display: flex;
     border-right: 1px solid #222222;
     position: fixed;
 }
 
-.navbar a{
+/* --------------- select --------------- */
+
+.btn-select,
+.menu{
     color: #fff;
     font-size: 1.5rem;
-    display: block;
     padding: 10px 0 10px 10px;
+    display: flex;
+
 }
 
-.selector a span, .menu span{
+.selector{
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+}
+
+.text-btn{
     font-family: 'Roboto', sans-serif;
-    height: 100%;
     font-size: 15px;
+    padding-left: 18px;
 }
 
 .selector a:hover, .menu:hover{
     background-color: #222222;
     border-radius: 8px;
     font-size: 1.55rem;
+    transition: .2s ease-in-out;
 }
 
-.selector img{
+.img-select{
     width: 25px;
     height: 25px;
     border-radius: 20px;
-}
-
-
-.selector{
-    padding: 0 0 40px;
 }
 
 .selector svg, .menu svg{
@@ -66,23 +75,30 @@ a{
     transition: .1s ease;
 }
 
-.selector a:hover svg,
-.navbar a:hover svg{
-    transform: scale(1.1);
-
+.btn-select:hover svg{
+    transform: scale(1.05);
+    transition: .3s ease-in-out;
 }
+
+/* --------------- select --------------- */
+
+/* --------------- menu modal --------------- */
 
 .modal{
     position: fixed;
     display: flex;
+    top: 27%;
+    left: 15px;
     width: 250px;
     height: auto;
-    margin: 190px 0 0 10px;
     padding: 8px;
-    pointer-events: none;
-    opacity: 0;
     background-color: #252424;
     border-radius: 15px;
+}
+
+.menu{
+    cursor: pointer;
+    color: #fff;
 }
 
 .btn-menu{
@@ -102,11 +118,6 @@ a{
     transition: .1s ease;
 }
 
-.modal--show{
-    opacity: 1;
-    pointer-events: unset;
-}
-
 .menu-modal a{
     display: flex;
     text-align: center;
@@ -121,6 +132,9 @@ a{
     display: flex;
     font-family: 'Roboto', sans-serif;
 }
+
+/* --------------- menu modal --------------- */
+
 
 .public{
     height: 1000px;
