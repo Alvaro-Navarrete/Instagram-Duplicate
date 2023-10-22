@@ -1,19 +1,3 @@
-// const menu = document.querySelector('.menu');
-// const modal = document.querySelector('.modal');
-// const wrapper = document.querySelector('.wrapper');
-
-// menu.addEventListener('click', (e)=>{
-//     e.preventDefault();
-//     modal.classList.add('modal--show');
-// });
-
-// wrapper.addEventListener('click', (e)=>{
-//     e.preventDefault();
-//     modal.classList.remove('modal--show');
-// });
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
 
     const menu = document.querySelector('.modal');
@@ -42,3 +26,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
+
+// ---------------------------------------------------
+
+const navbar = document.querySelector('.navbar')
+
+window.addEventListener('scroll', () =>{
+
+    const scrollY = window.scrollY
+
+    navbar.style.top = `${scrollY}px`
+})
+
