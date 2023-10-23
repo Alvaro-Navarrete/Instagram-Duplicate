@@ -53,6 +53,7 @@ a{
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     padding-left: 18px;
+    pointer-events: none;
 }
 
 .selector a:hover, .menu:hover{
@@ -73,6 +74,7 @@ a{
     height: 25px;
     fill: #fff;
     transition: .1s ease;
+    pointer-events: none;
 }
 
 .btn-select:hover svg{
