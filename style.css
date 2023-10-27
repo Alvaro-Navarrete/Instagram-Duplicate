@@ -26,7 +26,7 @@ a{
 
 .navbar{
     padding: 10px 10px 0 15px;
-    width: 250px;
+    width: 300px;
     height: 100vh;
     display: flex;
     border-right: 1px solid #222222;
@@ -137,6 +137,7 @@ a{
 
 /* --------------- menu modal --------------- */
 
+/* --------------- stories --------------- */
 
 .wrapper{
     width: 100%;
@@ -151,21 +152,111 @@ a{
 }
 
 .contain{
-    margin: 10px 0;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    margin-top: 10px;
+    width: 630px;
 }
 
 .stories{
     padding: 8px 0;
-    width: 100%;
+    width: 630px;
+    overflow: hidden;
+}
+
+.border-story{
+    border: 3px solid #fff;
+    border-radius: 60px;
 }
 
 .story{
     border-radius: 60px;
-    width: 66px;
-    height: 66px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #000;
 }
 
-.story>ul{
+.stories>ul{
     list-style: none;
+    display: flex;
+    column-gap: 15px;
 }
+
+/* --------------- stories --------------- */
+
+/* --------------- publicaciones --------------- */
+
+.publications{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    width: 470px; 
+}
+
+.post{
+
+}
+
+.top-post{
+    padding: 0 5px 15px;
+}
+
+.publication-user{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    column-gap: 5px;
+}
+
+.publication-user>img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+}
+
+.username-post,
+.publication-user>span,
+.time{
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.img-post{
+    display: flex;
+    align-items: center;
+    width: 468px;
+    height: 468px;
+}
+
+.top-description{
+    display: flex;
+    justify-content: space-between;
+}
+
+.publishing-interface{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.btn-post{
+    padding: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* --------------- publicaciones --------------- */
+
+/* --------------- recomendaciones --------------- */
+
+.suggestions{
+    width: 382px;
+    border: 2px solid #fff;
+    padding-left: 60px;
+}
+
+/* --------------- recomendaciones --------------- */
