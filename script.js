@@ -30,12 +30,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // ---------------------------------------------------
 
-const navbar = document.querySelector('.navbar')
+// const navbar = document.querySelector('.navbar')
 
-window.addEventListener('scroll', () =>{
+// window.addEventListener('scroll', () =>{
 
-    const scrollY = window.scrollY
+//     const scrollY = window.scrollY
 
-    navbar.style.top = `${scrollY}px`
-})
+//     navbar.style.top = `${scrollY}px`
+// })
 
