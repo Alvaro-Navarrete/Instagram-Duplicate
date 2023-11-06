@@ -29,7 +29,7 @@ a{
     position: fixed;
     top: 0;
     box-sizing: border-box;
-    width: 300px;
+    width: 19%;
     height: 100vh;
     display: flex;
     border-right: 1px solid #222222;
@@ -92,14 +92,19 @@ a{
 .modal{
     position: fixed;
     display: flex;
-    top: 27%;
-    left: 15px;
+    transform: translate(12px, 560px) translate(0px, -100%);
     width: 250px;
     height: auto;
     padding: 8px;
     background-color: #252424;
     border-radius: 15px;
 }
+/* 
+@media screen and (min-width: 3200px) {
+    .modal{
+        transform: translate(12px, 1800px) translate(0px, -100%);
+    }
+} */
 
 .menu{
     cursor: pointer;
@@ -107,7 +112,6 @@ a{
 }
 
 .btn-menu{
-    padding: 13px;
     width: 230px;
 }
 
@@ -126,6 +130,8 @@ a{
 .menu-modal a{
     display: flex;
     text-align: center;
+    padding: 13px;
+
 }
 
 .menu-modal a span{
@@ -144,8 +150,8 @@ a{
 
 .wrapper{
     width: 100%;
-    height: 1000px;
-    margin-left: 300px;
+    padding-bottom: 50px;
+    margin-left: 19%;
 }
 
 .main{
@@ -174,7 +180,7 @@ a{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 70px;
+    width: 72px;
 }
 
 .story{
@@ -231,6 +237,9 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #292929;
 }
 
 .top-post{
@@ -321,8 +330,12 @@ a{
     background: transparent;
     color: #fff;
     border: transparent;
+    font-size: 14px;
     width: 100%;
-    height: 25px;
+    resize: none;
+    padding: 5px;
+    height: 30px;
+    max-height: 100px;
     outline: none;
 }
 

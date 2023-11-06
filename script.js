@@ -39,3 +39,11 @@ document.addEventListener('DOMContentLoaded', function () {
 //     navbar.style.top = `${scrollY}px`
 // })
 
+
+
+const textarea = document.querySelector('.input-comment');
+
+textarea.addEventListener('input', function () {
+  this.style.height = '30px';
+  this.style.height = this.scrollHeight + 'px'; 
+});
