@@ -333,6 +333,7 @@ a{
     font-size: 14px;
     width: 100%;
     resize: none;
+    overflow-y: hidden;
     padding: 5px;
     height: 30px;
     max-height: 100px;

@@ -44,6 +44,6 @@ document.addEventListener('DOMContentLoaded', function () {
 const textarea = document.querySelector('.input-comment');
 
 textarea.addEventListener('input', function () {
-  this.style.height = '30px';
-  this.style.height = this.scrollHeight + 'px'; 
+    this.style.height = '30px';
+    this.style.height = this.scrollHeight + 'px';
 });
